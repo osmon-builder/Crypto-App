@@ -8,6 +8,7 @@ const Coinitems = ({ coin }) => {
                 <Image
                     style={style.image}
                     source={{ uri: coin.image }}
+                    onPress={() => navigator.push('Details')}
                 />
                 <View style={style.containerNames}>
                     <Text style={style.text}>{coin.name}</Text>
